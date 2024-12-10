@@ -1,0 +1,28 @@
+.menu {
+  display: none;
+
+  @include on-small-desktop {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 48px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.5px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
