@@ -107,7 +107,12 @@
   }
 
   &__button {
-    width: 280px;
+    width: 100%;
+
+    @include on-tablet {
+      width: 264px;
+    }
+    
     height: 56px;
     background-color: #144ed4;
     border-radius: 8px;

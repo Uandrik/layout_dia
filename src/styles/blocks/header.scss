@@ -20,7 +20,7 @@
     margin-block: 48px 32px;
 
     @include on-small-desktop {
-      margin-block: 164px 0;
+      margin-block: 164px 32px;
     }
   }
 
@@ -40,7 +40,12 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    width: 280px;
+    width: 100%;
+
+    @include on-tablet {
+      width: 264px;
+    }
+
     height: 50px;
     border-radius: 8px;
     background-color: #2060f6;

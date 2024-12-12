@@ -78,6 +78,11 @@
         gap: 64;
       }
 
+
+    }
+
+    &-link {
+      position: relative;
       text-decoration: none;
       text-transform: uppercase;
 
@@ -87,11 +92,25 @@
       line-height: 19.5px;
       letter-spacing: 3px;
       color: #fff;
-    }
 
-    &-link {
-      text-decoration: none;
-      color: #fff;
+      padding-bottom: 8px;
+
+      &::after {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        content: '';
+        background-color: #144ED4;
+        height: 2px;
+        transform: scale(0);
+        transition: transform 0.3s;
+        transform-origin: left;
+      }
+
+      &:hover::after {
+        transform: scale(1);
+      }
     }
   }
 }

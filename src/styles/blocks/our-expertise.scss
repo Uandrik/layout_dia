@@ -17,9 +17,13 @@
 
   &__article {
     grid-column: 1 / -1;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    max-width: 362px;
+
+
 
     @include on-tablet {
       grid-column: 2 / -2;
@@ -41,6 +45,8 @@
       }
     }
   }
+
+
 
   &__title {
     font-family: Poppins, sans-serif;
